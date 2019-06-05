@@ -19,6 +19,7 @@
 <!-- IMAGES -->
     <div id="images">
         <img class="point" id="point" src="assets/images/point-02.png" />
+        <img class="sarah" id="sarah" src="assets/images/sarah4.png" />
         <div id="cheetahs">
             <img class="cheetah" id="cheetah1" src="assets/images/cheetah 1.jpg" />
             <img class="cheetah" id="cheetah2" src="assets/images/cheetah 2.jpg" />
@@ -26,6 +27,15 @@
             <img class="cheetah" id="cheetah4" src="assets/images/cheetah 4.jpg" />
             <img class="cheetah" id="cheetah5" src="assets/images/cheetah 5.jpg" />
         </div>
+        <img class="cheetah_group" id="cheetah_3_1" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_2" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_3" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_4" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_5" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_6" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_7" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_8" src="assets/images/cheetah 3.jpg" />
+        <img class="cheetah_group" id="cheetah_3_9" src="assets/images/cheetah 3.jpg" />
         <div id="text">
             <p> Now let's play the animal game!</p>
         </div>
@@ -46,7 +56,7 @@
             onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
             onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
         >
-            <source src="assets/audio/introduction.mp3" />
+            <source src="assets/audio/sample audio/introduction.mp3" />
         </audio>
 
         <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -68,20 +78,25 @@
             id="audio2" 
             onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
         >
-                <source src="assets/audio/cheetah_average.mp3" />
+                <source src="assets/audio/sample audio/cheetah_intro.mp3" />
         </audio>
 
-    <!-- AUDIO 3: Selection Intro -->    
         <audio 
             id="audio3" 
             onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);">
-            <source src="assets/audio/cheetah_selectionintro.mp3" />
+            <source src="assets/audio/sample audio/cheetah_allaverage.mp3" />
+        </audio>
+    <!-- AUDIO 3: Selection Intro -->    
+        <audio 
+            id="audio4" 
+            onended="setTimeout(function () { document.getElementById('audio5').play();}, 000);">
+            <source src="assets/audio/sample audio/cheetah_selectionintro.mp3" />
         </audio>
 
     <!-- AUDIO 4: Selection  -->
         <audio 
-            id="audio4" >
-            <source src="assets/audio/cheetah_selection.mp3" />
+            id="audio5" >
+            <source src="assets/audio/sample audio/cheetah_selection.mp3" />
         </audio>  
 
 </body>
