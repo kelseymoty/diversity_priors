@@ -38,7 +38,7 @@ p {
 /* introduction.html-specific CSS  */
 img.cheetah {
     position: absolute;
-    width: 100%;
+    width: 90%;
     opacity: 0;
 }
 
