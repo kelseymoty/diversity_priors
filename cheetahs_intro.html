@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/cheetahs_average.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run introduction for knowledgeable speaker -->
+
+<!-- IMAGES -->
+    <div id="images">
+        <img class="point" id="point" src="assets/images/point-02.png" />
+        <div id="cheetahs">
+            <img class="cheetah" id="cheetah1" src="assets/images/cheetah 1.jpg" />
+            <img class="cheetah" id="cheetah2" src="assets/images/cheetah 2.jpg" />
+            <img class="cheetah" id="cheetah3" src="assets/images/cheetah 3.jpg" />
+            <img class="cheetah" id="cheetah4" src="assets/images/cheetah 4.jpg" />
+            <img class="cheetah" id="cheetah5" src="assets/images/cheetah 5.jpg" />
+            <img class="sarah" id="sarah" src="assets/images/sarah4.png" />
+        </div>
+        <div id="text">
+            <p> Now let's play the animal game!</p>
+        </div>
+    </div>
+
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: introduction to animal task  -->
+        <audio 
+            id="audio" 
+            onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
+            onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
+        >
+            <source src="assets/audio/introduction.mp3" />
+        </audio>
+
+        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+        could oddly be fixed if I opened the html in the web browser with this code uncommented
+        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+        They've discussed changing this policy back, but either way, using the audio tag above
+        or the iframe solution should get the audio to autoplay. You only need to use the iframe
+        solution for the first audio. All other audio afterward will successfully autoplay  -->
+        <!-- <iframe 
+            src="assets/audio/introduction.mp3" 
+            allow="autoplay" 
+            style="display:none" 
+            id="audio1">
+        </iframe> -->
+
+
+    <!-- AUDIO 2: DIFFERENT BY CONDITION: cheetah intro -->
+        <audio 
+            id="audio2" 
+            onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
+        >
+                <source src="assets/audio/cheetah_average.mp3" />
+        </audio>
+
+    <!-- AUDIO 3: Selection Intro -->    
+        <audio 
+            id="audio3" 
+            onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);">
+            <source src="assets/audio/cheetah_selectionintro.mp3" />
+        </audio>
+
+    <!-- AUDIO 4: Selection  -->
+        <audio 
+            id="audio4" >
+            <source src="assets/audio/cheetah_selection.mp3" />
+        </audio>  
+
+</body>
+</html>
