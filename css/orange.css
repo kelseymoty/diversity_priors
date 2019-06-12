@@ -1,0 +1,260 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#sarah_headshot {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 16s, 40s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 4
+}
+
+img#sarah_one {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 1s, 0s;
+    animation-delay: 4.5s, 19s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#sarah_left {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 1s, 0s;
+    animation-delay: 0s, 4.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#orange1 {
+    position: absolute;
+    left: 7%;
+    width: 15.5%;
+    top: 48%;
+    opacity: 0;
+    animation-name: fadeIn, pulseMedium;
+    animation-duration: 1s, 1.5s;
+    animation-delay: 0s, 20.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#orange2 {
+    position: absolute;
+    left: 24%;
+    width: 16%;
+    top: 42.5%;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#orange3 {
+    position: absolute;
+    left: 41%;
+    width: 15%;
+    top: 46%;
+    opacity: 0;
+    animation-name: fadeIn, pulseMedium, wiggle;
+    animation-duration: 1s, 1.5s, 1.5s;
+    animation-delay: 0s, 23s, 25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#orange4 {
+    position: absolute;
+    left: 58%;
+    width: 15%;
+    top: 43.8%;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#orange5 {
+    position: absolute;
+    left: 75%;
+    width: 14%;
+    top: 44.5%;
+    opacity: 0;
+    animation-name: fadeIn, pulseMedium;
+    animation-duration: 1s, 1.5s;
+    animation-delay: 0s, 19s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#oranges_bowl {
+    position: absolute;
+    left: 5%;
+    width: 86%;
+    top: 45%;
+    opacity: 0;
+    animation-name:
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#point {
+    position: absolute;
+    left: 6%;
+    top: 70%;
+    width: 10%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, handLeftToRight, fadeOut;
+    animation-duration: 0s, 4.7s, 0s;
+    animation-delay: 26s, 26s, 38s;
+    animation-fill-mode: forwards;
+}
+
+/* Library of animations */
+@keyframes handUp {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {   
+        left: 37%;
+        top: 85%;
+    } 
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 6%;
+        top: 70%;
+    }
+    100% {   
+        left: 78%;
+        top: 70%;
+    } 
+}
+
+@keyframes handUpAndDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    35% {   
+        left: 89%;
+        top: 23%;
+    } 
+    100% {
+        left: 37%;
+        top: 85%;
+    }
+}
+
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: .50}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.2)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}

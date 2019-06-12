@@ -1,0 +1,253 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#sarah_headshot {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 4s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 4
+}
+
+img#sarah_one {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 6s, 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#sarah_left {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 0s, 1.5s, 5.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#basket {
+    position: absolute;
+    left: 33%;
+    width: 33%;
+    top: 17%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 2s, 2s, 0s;
+    animation-delay: 0s, 1.5s, 3.5s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 4
+}
+
+img#redshirt {
+    position: absolute;
+    left: 8%;
+    width: 15%;
+    top: 65%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, wiggle, fadeOut50, fadeOut;
+    animation-duration: 0s, 1.5s, 2s, 2s, 0s;
+    animation-delay: 0s, 5s, 17s, 19s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#underwear {
+    position: absolute;
+    left: 26%;
+    width: 17%;
+    top: 64%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 1.5s, 0s;
+    animation-delay: 0s, 5s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#redpants {
+    position: absolute;
+    left: 43%;
+    width: 16%;
+    top: 67%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 1.5s, 3s, 0s;
+    animation-delay: 0s, 5s, 37s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#bluesocks {
+    position: absolute;
+    left: 62%;
+    width: 10%;
+    top: 68%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 1.5s, 0s;
+    animation-delay: 0s, 5s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#yellowshirt {
+    position: absolute;
+    left: 76%;
+    width: 14%;
+    top: 67%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 1.5s, 0s;
+    animation-delay: 0s, 5s, 44s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+/* Library of animations */
+@keyframes handUp {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {   
+        left: 37%;
+        top: 85%;
+    } 
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 6%;
+        top: 70%;
+    }
+    100% {   
+        left: 78%;
+        top: 70%;
+    } 
+}
+
+@keyframes handUpAndDown {
+    0% {
+        left: 8%;
+        top: 65%;
+    }
+    40% {   
+        left: 20%;
+        top: 41%;
+    } 
+    75% {
+        left: 33%;
+        top: 17%;
+    }
+    100% {
+        left: 8%;
+        top: 65;
+    }
+}
+
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: .50}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.2)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  35% {transform: rotate(-2.5deg);}
+  50% {transform: rotate(5deg)}
+  65% {transform: rotate(-5deg);}
+  80% {transform: rotate(1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}

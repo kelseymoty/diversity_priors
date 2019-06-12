@@ -1,0 +1,289 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#sarah_point, img#sarah_up, img#sarah4 {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    opacity: 0;
+}
+
+img#sarah4 {
+    animation-name: fadeIn, moveRight, fadeOut;
+    animation-duration: 0s, 2s, 2s;
+    animation-delay: 0.5s, 2.5s, 29s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 4;
+}
+
+img#sarah_up {
+    animation-name: fadeIn, moveRight, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 2s, 0s, 0s, 0s, 0s, 2s;
+    animation-delay: 2.5s, 2.5s, 5s, 13s, 18.5s, 23.5s, 29s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img.animals {
+    opacity: 0;
+    animation-name: fadeIn, wiggle, fadeOut;
+    animation-duration: 1s, 2s, 2s;  
+    animation-delay: 7.5s, 8s, 29s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#mouse {
+    position: absolute;
+    left: 5%;
+    width: 15%;
+    top: 11%;
+}
+
+img#cow {
+    position: absolute;
+    left: 38%;
+    width: 20%;
+    top: 6.5%;  
+}
+
+img#croc {
+    position: absolute;
+    left: 5%;
+    width: 20%;
+    top: 75%; 
+}
+
+img#horse {
+    position: absolute;
+    left: 38%;
+    width: 20%;
+    top: 63%;
+}
+
+img#dog {
+    position: absolute;
+    left: 25%;
+    width: 14%;
+    top: 33%;
+}
+
+img#sarah_headshot {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 33s, 62s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 4
+}
+
+img#sarah_one {
+    position: absolute;
+    left: 70%;
+    width: 25%;
+    top: 4%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 2s, 0s, 0s, 0s;
+    animation-delay: 0s, 30s, 33s, 48s, 50s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#bird {
+    position: absolute;
+    left: 13%;
+    width: 17%;
+    top: 45%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
+    animation-duration: 0s, 1s, 1.5s, 0s;
+    animation-delay: 0s, 34s, 43s, 62s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#chickadee {
+    position: absolute;
+    left: 43%;
+    width: 17%;
+    top: 46%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
+    animation-duration: 0s, 1s, 1.5s, 0s;
+    animation-delay: 0s, 34s, 44.5s, 62s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#pig {
+    position: absolute;
+    left: 65%;
+    width: 22%;
+    top: 41%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
+    animation-duration: 0s, 1s, 1.5s, 0s;
+    animation-delay: 0s, 34s, 46s, 62s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#point {
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    width: 10%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 56s, 62s;
+    animation-fill-mode: forwards;
+}
+
+/* Library of animations */
+@keyframes handUp {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {   
+        left: 37%;
+        top: 85%;
+    } 
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 6%;
+        top: 70%;
+    }
+    100% {   
+        left: 78%;
+        top: 70%;
+    } 
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+    100% {   
+        left: 45%;
+        top: 0%;
+    } 
+}
+
+@keyframes handUpAndDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    35% {   
+        left: 89%;
+        top: 23%;
+    } 
+    100% {
+        left: 37%;
+        top: 85%;
+    }
+}
+
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: .50}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.2)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  35% {transform: rotate(-2.5deg);}
+  50% {transform: rotate(5deg)}
+  65% {transform: rotate(-5deg);}
+  80% {transform: rotate(1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}

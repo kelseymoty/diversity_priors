@@ -71,6 +71,19 @@ img#sarah_point {
     z-index: 5;
 }
 
+img#point {
+    position: absolute;
+    left: 6%;
+    top: 70%;
+    width: 10%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, handLeftToRight, fadeOut;
+    animation-duration: 0s, 2.8s, 0s;
+    animation-delay: 70s, 72s, 78s;
+    animation-fill-mode: forwards;
+}
+
 img.animals {
     opacity: 0;
     animation-name: fadeIn, wiggle, fadeOut;
@@ -116,7 +129,7 @@ img#sarah_headshot {
     opacity: 0;
     animation-name: fadeIn, fadeOut, fadeIn;
     animation-duration: 3s, 0s, 0s;
-    animation-delay: 17.1s, 48s, 63.01s;
+    animation-delay: 17.1s, 48s, 63s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -128,8 +141,8 @@ img#sarah_one {
     top: 4%;
     opacity: 0;
     animation-name: fadeIn, fadeOut;
-    animation-duration: 0.5s, 0s;
-    animation-delay: 48.01s, 63s;
+    animation-duration: 0s, 0s;
+    animation-delay: 48s, 63s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -209,6 +222,17 @@ img#cup5 {
         left: 89%;
         top: 23%;
     }
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 6%;
+        top: 70%;
+    }
+    100% {   
+        left: 78%;
+        top: 70%;
+    } 
 }
 
 @keyframes handDown {
