@@ -1,0 +1,241 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#sarah1, img#sarah_point, img#sarah_up, img#sarah4, img#sarah_happy {
+    position: absolute;
+    left: 15%;
+    width: 100%;
+    top: 0%;
+    opacity: 0;
+}
+
+img#sarah4 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 3.75s, 7.5s, 8.5s, 10s, 11s, 12.5s, 14.5s, 20.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#sarah1 {
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 20.5s, 26s;
+    animation-fill-mode: forwards; 
+    z-index: 3;
+}
+
+img#sarah_up {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s;
+    animation-delay: 7.5s, 8.5s, 10s, 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#sarah_point {
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 12.5s, 14.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#sarah_happy {
+    animation-name: fadeIn, bounceUpAndDown, fadeOut;
+    animation-duration: 1s, 2.75s, 0s;
+    animation-delay: 0s, 0s, 3.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img.animals {
+    opacity: 0;
+    animation-name: fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 2s, 2s;  
+    animation-delay: 2s, 2s, 7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#pig {
+    position: absolute;
+    left: 7%;
+    width: 20%;
+    top: 5%;
+}
+
+img#cow {
+    position: absolute;
+    left: 70%;
+    width: 20%;
+    top: 7%;  
+}
+
+img#croc {
+    position: absolute;
+    left: 8%;
+    width: 20%;
+    top: 83%; 
+}
+
+img#horse {
+    position: absolute;
+    left: 72%;
+    width: 20%;
+    top: 68%;
+}
+
+
+
+/* Library of animations */
+@keyframes handUp {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 6%;
+        top: 70%;
+    }
+    100% {   
+        left: 78%;
+        top: 70%;
+    } 
+}
+
+@keyframes handDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {   
+        left: 37%;
+        top: 85%;
+    } 
+}
+
+@keyframes handUpAndDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    35% {   
+        left: 89%;
+        top: 23%;
+    } 
+    100% {
+        left: 37%;
+        top: 85%;
+    }
+}
+
+@keyframes bounceUpAndDown {
+    0% {
+        left: 15%;
+        top: 0%;
+    }
+    35% {   
+        left: 15%;
+        top: -7%;
+    } 
+    55% {
+        left: 15%;
+        top: 0%; 
+    }
+    75% {
+        left: 15%;
+        top: -7%; 
+    }
+    100% {
+        left: 15%;
+        top: 0%;
+    }
+}
+
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: .50}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.2)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}
