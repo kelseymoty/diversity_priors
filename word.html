@@ -23,6 +23,12 @@
             <img class="lots" id="squares" src="assets/images/lots/blue-squares.png" />
             <img class="lots" id="triangles" src="assets/images/lots/orange-triangles.png" />
             <img class="lots" id="circles" src="assets/images/lots/green-circles.png" />
+            <img class="lots" id="stars" src="assets/images/lots/stars.png" />
+            <img class="lots" id="all" src="assets/images/lots/All Button.png" />
+            <img class="lots" id="lots2" src="assets/images/lots/Lots Button.png" />
+            <img class="lots" id="few" src="assets/images/lots/Only A Few Button.png" />
+
+    </div>
     </div>
 
     <div id="text1">
@@ -47,11 +53,11 @@
     <!-- onended="document.getElementById('').play()" finds the next audio to play
         after current audio ends and plays it -->
 
-    <!-- AUDIO 1: introduction to animal task  -->
+    <!-- AUDIO 1: Word Intro -->
     <audio 
     id="audio" 
     onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 000)" 
-    onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
+    onended="setTimeout(function () { document.getElementById('audio2').play();}, 000);"
 >
     <source src="assets/audio/word_intro.m4a" />
 </audio>
@@ -69,6 +75,14 @@ solution for the first audio. All other audio afterward will successfully autopl
     id="audio1">
 </iframe> -->
 
+<!-- AUDIO 2: Word Star  -->
+<audio 
+id="audio2" 
+onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
+>
+    <source src="assets/audio/word_star.m4a" />
+
+</audio>
 </audio>  
 </body>
 </html>

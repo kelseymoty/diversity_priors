@@ -20,7 +20,7 @@ img#sarah_headshot {
     opacity: 0%;
     animation-name: fadeIn, fadeOut;
     animation-duration: 0s, 0s;
-    animation-delay: 0s, 22s;
+    animation-delay: 0s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 4
@@ -46,9 +46,9 @@ img#sarah_left {
     width: 25%;
     top: 4%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 3.5s, 5s, 9s, 10.5s, 14s, 15.5s;
+    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 3.5s, 5s, 9s, 10.5s, 14s, 15.5s, 20.5s, 23s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -62,7 +62,7 @@ img#squares {
     opacity: 0%;
     animation-name: fadeOut, fadeIn, pulseMedium, smallerMove, fadeOut;
     animation-duration: 0s, 0s, 1.5s, 1s, 0s;
-    animation-delay: 0s, 3.5s, 5s, 7.5s, 22s;
+    animation-delay: 0s, 3.5s, 5s, 7.5s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -76,7 +76,7 @@ img#triangles {
     opacity: 0%;
     animation-name: fadeOut, fadeIn, pulseMedium, smallerMove2, fadeOut;
     animation-duration: 0s, 0s, 1.5s, 1s, 0s;
-    animation-delay: 0s, 9s, 10s, 13s, 22s;
+    animation-delay: 0s, 9s, 10s, 13s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -90,7 +90,7 @@ img#circles {
     opacity: 0%;
     animation-name: fadeOut, fadeIn, pulseMedium, smallerMove3, fadeOut;
     animation-duration: 0s, 0s, 1.5s, 1s, 0s;
-    animation-delay: 0s, 14s, 16s, 18s, 22s;
+    animation-delay: 0s, 14s, 16s, 18s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -105,7 +105,7 @@ div#text1 {
     bottom: 0;
     animation-name: fadeOut, fadeIn, smallerMoveB, fadeOut;
     animation-duration: 0s, 0s, 1s, 0s;
-    animation-delay: 0s, 5.5s, 7.5s, 22s;
+    animation-delay: 0s, 5.5s, 7.5s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -120,7 +120,7 @@ div#text2 {
     bottom: 0;
     animation-name: fadeOut, fadeIn, smallerMove2B, fadeOut;
     animation-duration: 0s, 0s, 1s, 0s;
-    animation-delay: 0s, 10.5s, 13s, 22s;
+    animation-delay: 0s, 10.5s, 13s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -135,7 +135,7 @@ div#text3 {
     bottom: 0;
     animation-name: fadeOut, fadeIn, smallerMove3B, fadeOut;
     animation-duration: 0s, 0s, 1s, 0s;
-    animation-delay: 0s, 16s, 18s, 22s;
+    animation-delay: 0s, 16s, 18s, 20.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -146,6 +146,65 @@ p {
     color: black;
     text-align: center;
 }
+
+img#stars {
+    position: absolute;
+    left: 29%;
+    width: 35%;
+    top: 17%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s,  0s;
+    animation-delay: 0s, 20.5s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#all {
+    position: absolute;
+    left: 8%;
+    width: 20%;
+    top: 65%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 0s;
+    animation-delay: 0s, 25s, 25s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#lots2 {
+    position: absolute;
+    left: 36.5%;
+    width: 20%;
+    top: 65%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 0s;
+    animation-delay: 0s, 26.5s, 26.5s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#few {
+    position: absolute;
+    left: 65%;
+    width: 19.9%;
+    top: 65%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 0s;
+    animation-delay: 0s, 28.5s, 28.5s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+
+
 
 
 /* Library of animations */
