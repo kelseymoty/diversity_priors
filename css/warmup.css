@@ -129,9 +129,9 @@ img#chickadee {
     width: 17%;
     top: 46%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
-    animation-duration: 0s, 1s, 1.5s, 0s;
-    animation-delay: 0s, 34s, 44.5s, 62s;
+    animation-name: fadeOut, fadeIn, pulseMedium, pulseMedium, fadeOut;
+    animation-duration: 0s, 1s, 1.5s, 1.5s, 0s;
+    animation-delay: 0s, 34s, 44.5s, 56s, 62s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }

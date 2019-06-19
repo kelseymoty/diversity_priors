@@ -20,7 +20,7 @@ img#sarah_headshot {
     opacity: 0%;
     animation-name: fadeIn, fadeOut;
     animation-duration: 0s, 0s;
-    animation-delay: 0s, 33s;
+    animation-delay: 0s, 57s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 4
@@ -32,9 +32,9 @@ img#sarah_one {
     width: 25%;
     top: 4%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 0s;
-    animation-delay: 0s, 3.5s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 3.5s, 24s, 30.5s, 42s, 49s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -46,9 +46,9 @@ img#sarah_left {
     width: 25%;
     top: 4%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 3.5s, 5s, 9s, 10.5s, 14s, 15.5s, 20.5s, 23s;
+    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 3.5s, 5s, 9s, 10.5s, 14s, 15.5s, 20.5s, 23s, 38s, 40s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -155,7 +155,7 @@ img#stars {
     opacity: 0%;
     animation-name: fadeOut, fadeIn, fadeOut;
     animation-duration: 0s, 0s,  0s;
-    animation-delay: 0s, 20.5s, 33s;
+    animation-delay: 0s, 20.5s, 38s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -167,9 +167,9 @@ img#all {
     width: 20%;
     top: 65%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
-    animation-duration: 0s, 0s, 1.5s, 0s;
-    animation-delay: 0s, 25s, 25s, 33s;
+    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut50, fadeOut, fadeIn, pulseMedium, fadeOut50, fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 0s, 0s, 0s, 1.5s, 0s, 0s;
+    animation-delay: 0s, 25s, 25s, 33.5s, 38s, 42.5s, 42.5s, 52s, 57s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -181,9 +181,9 @@ img#lots2 {
     width: 20%;
     top: 65%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
-    animation-duration: 0s, 0s, 1.5s, 0s;
-    animation-delay: 0s, 26.5s, 26.5s, 33s;
+    animation-name: fadeOut, fadeIn, pulseMedium, pulseMedium, fadeOut, fadeIn, pulseMedium, fadeOut50, fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 1.5s, 0s, 0s, 1.5s, 0s, 0s;
+    animation-delay: 0s, 26.5s, 26.5s, 33.5s, 38s, 44.5s, 44.5s, 52s, 57s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
@@ -195,15 +195,27 @@ img#few {
     width: 19.9%;
     top: 65%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium,fadeOut;
-    animation-duration: 0s, 0s, 1.5s, 0s;
-    animation-delay: 0s, 28.5s, 28.5s, 33s;
+    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut50, fadeOut, fadeIn, pulseMedium, pulseMedium, fadeOut;
+    animation-duration: 0s, 0s, 1.5s, 0s, 0s, 0s, 1.5s, 1.5s, 0s;
+    animation-delay: 0s, 28.5s, 28.5s, 33.5s, 38s, 46s, 46s, 52s, 57s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 5
 }
 
-
+img#redsquares {
+    position: absolute;
+    left: 29%;
+    width: 35%;
+    top: 17%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s,  0s;
+    animation-delay: 0s, 38s, 57s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
 
 
 
@@ -301,7 +313,7 @@ img#few {
 
 @keyframes fadeOut50 {
     0% {opacity: 1}
-    100% {opacity: .50}
+    100% {opacity: .40}
 }
 
 @keyframes fadeIn {

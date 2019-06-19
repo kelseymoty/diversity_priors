@@ -27,6 +27,7 @@
             <img class="lots" id="all" src="assets/images/lots/All Button.png" />
             <img class="lots" id="lots2" src="assets/images/lots/Lots Button.png" />
             <img class="lots" id="few" src="assets/images/lots/Only A Few Button.png" />
+            <img class="lots" id="redsquares" src="assets/images/lots/red squares.png" />
 
     </div>
     </div>
@@ -78,9 +79,33 @@ solution for the first audio. All other audio afterward will successfully autopl
 <!-- AUDIO 2: Word Star  -->
 <audio 
 id="audio2" 
-onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
+onended="setTimeout(function () { document.getElementById('audio3').play();}, 2000);"
 >
     <source src="assets/audio/word_star.m4a" />
+
+
+<!-- AUDIO 3: Word Star Lots -->
+<audio 
+id="audio3" 
+onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
+>
+    <source src="assets/audio/word_star_lots.m4a" />
+
+
+<!-- AUDIO 4: Word Square -->
+<audio 
+id="audio4" 
+onended="setTimeout(function () { document.getElementById('audio5').play();}, 2000);"
+>
+    <source src="assets/audio/word_square.m4a" />
+
+<!-- AUDIO 5: Word Square Few -->
+<audio 
+id="audio5" 
+onended="setTimeout(function () { document.getElementById('audio6').play();}, 000);"
+>
+    <source src="assets/audio/word_square_few.m4a" />
+
 
 </audio>
 </audio>  
