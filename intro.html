@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!-- This code is set up to run introduction for knowledgeable speaker -->
+
 
 <!-- IMAGES -->
     <div id="images">
@@ -27,6 +27,7 @@
             <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
             <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
             <img class="point" id="point" src="assets/images/sarah/point-02.png" />
+            <img class="point" id="point2" src="assets/images/sarah/point-02.png" />
             <img class="animals" id="pig" src="assets/images/animals/download-4.jpg" />
             <img class="animals" id="cow" src="assets/images/animals/download-3.jpg" />
             <img class="animals" id="croc" src="assets/images/animals/download-5.jpg" />
@@ -82,30 +83,18 @@
     <!-- AUDIO 3: Scale Water Least -->    
         <audio 
             id="audio3" 
-            onended="setTimeout(function () { document.getElementById('audio4').play();}, 1000);">
-            <source src="assets/audio/scale_water_least.m4a" />
+            onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
+        >
+                <source src="assets/audio/scale_water_least.m4a" />
         </audio>
 
-    <!-- AUDIO 4: Scale Water Most  -->
+    <!-- AUDIO 4: Scale Water Least Feedback  -->
         <audio 
             id="audio4"
-            onended="setTimeout(function () { document.getElementById('audio5').play();}, 1000);">
-            <source src="assets/audio/scale_water_most.m4a" />
+            onended="setTimeout(function () { document.getElementById('audio5').play();}, 1000);"
+            >
+            <source src="assets/audio/scale_water_least_feedback.m4a" />
         </audio>  
 
-    <!-- AUDIO 5: Scale Water Middle  -->
-        <audio 
-            id="audio5"
-            onended="setTimeout(function () { document.getElementById('audio6').play();}, 1000);">
-            <source src="assets/audio/scale_water_middle.m4a" />
-        </audio>  
-    
-    <!-- AUDIO 6: Scale Water Outro -->
-        <audio 
-        id="audio6"
-        onended="setTimeout(function () { document.getElementById('audio7').play();}, 000);">
-        <source src="assets/audio/scale_water_outro.m4a" />
-
-</audio>  
 </body>
 </html>

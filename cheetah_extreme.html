@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/cheetah_average.css">
+    <link rel="stylesheet" href="css/cheetah_extreme.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
     <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
@@ -17,7 +17,6 @@
 <!-- IMAGES -->
 <div id="images">
         <img class="point" id="point" src="assets/images/sarah/point-02.png" />
-        <img class="point" id="point2" src="assets/images/sarah/point-02.png" />
         <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
         <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
         <img class="cheetah" id="cheetah1" src="assets/images/cheetah/cheetah1.jpeg" />
@@ -68,15 +67,14 @@ solution for the first audio. All other audio afterward will successfully autopl
 
     </audio>
 
-
-<!-- AUDIO 3: Cheetah Average -->
+<!-- AUDIO 3: Cheetah Extreme -->
 <audio 
-id="audio3" 
-onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
+    id="audio3" 
+    onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
 >
-    <source src="assets/audio/cheetah_average.m4a" />
+        <source src="assets/audio/cheetah_extreme.m4a" />
 
-</audio>
+    </audio>
 
 </body>
 </html>

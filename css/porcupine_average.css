@@ -15,12 +15,12 @@ div#images {
 img#sarah_headshot {
     position: absolute;
     left: 73%;
-    width: 22%;
-    top: 76%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 20s, 23s, 32s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 0s, 21s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -29,105 +29,103 @@ img#sarah_headshot {
 img#sarah_one {
     position: absolute;
     left: 73%;
-    width: 22%;
-    top: 76%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 20s, 23s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 20s, 25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#sarah_left {
+    position: absolute;
+    left: 73%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 0s, 2.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
 }
 
-img#cheetah1 {
+img#porcupine1 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 80%;
+    left: 1%;
+    width: 17%;
+    top: 46%;
     z-index: 5;
-    animation-name: pulseSmall, wiggle, fadeOut;
-    animation-duration: 1.5s, 1s, 0s;
-    animation-delay: 8.5s, 21.5s, 32s;
+    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 0s;
+    animation-delay: 1s, 8.5s, 22.5s, 25s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah2 {
+img#porcupine2 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 58%;
+    left: 20%;
+    width: 18%;
+    top: 45%;
     z-index: 5;
-    animation-name: wiggle, fadeOut;
-    animation-duration: 1s, 0s;
-    animation-delay: 21.5s, 32s;
+    animation-name: wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 0s;
+    animation-delay: 1s, 22.5s, 25s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah3 {
+img#porcupine3 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 40%;
+    left: 40%;
+    width: 18%;
+    top: 43%;
     z-index: 5;
-    animation-name: pulseSmall, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1.5s, 1s, 1s, 1.5s, 0s;
-    animation-delay: 11s, 13s, 21.5s, 27s, 32s;
+    animation-name: wiggle, pulseMedium, pulseMedium, wiggle, pulseMedium, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
+    animation-delay: 1s, 11s, 13.5s, 22.5s, 26.5s, 25s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah4 {
+img#porcupine4 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 17%;
+    left: 60%;
+    width: 18%;
+    top: 39%;
     z-index: 5;
-    animation-name: wiggle, fadeOut;
-    animation-duration: 1s, 0s;
-    animation-delay: 21.5s, 32s;
+    animation-name: wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 0s;
+    animation-delay: 1s, 22.5s, 25s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah5 {
+img#porcupine5 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: -3%;
+    left: 80%;
+    width: 18%;
+    top: 35%;
     z-index: 5;
-    animation-name: pulseSmall, wiggle, fadeOut;
-    animation-duration: 1.5s, 1s, 0s;
-    animation-delay: 6.5s, 21.5s, 32s;
+    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 0s;
+    animation-delay: 1s, 6.5s, 22.5s, 25s;
     animation-fill-mode: forwards;
 }
 
 img#point {
     position: absolute;
-    left: 62%;
-    top: 53%;
+    left: 46%;
+    top: 68%;
     width: 9%;
     opacity: 0;
     z-index: 6;
-    transform: rotate(-40deg);
-    animation-name: fadeOut, fadeIn, handUpAndDown, fadeOut, fadeIn, handDown, handUp, fadeOut, fadeIn, handDown2, fadeOut;
-    animation-duration: 0s, 0s, 3.5s, 0s, 0s, 2s, 1.75s, 0s, 0s, 3s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6s, 14s, 14s, 16s, 18s, 28.5s, 28.5s, 32s;
+    animation-name: fadeOut, fadeIn, handRightToLeft, fadeOut, fadeIn, handLeftToRight, fadeOut;
+    animation-duration: 0s, 0s, 3.5s, 0s, 0s, 4s, 0s;
+    animation-delay: 0s, 2.5s, 2.5s, 6s, 14.5s, 14.5s, 19s;
     animation-fill-mode: forwards;
 }
-
-img#point2 {
-    position: absolute;
-    left: 73%;
-    top: 40%;
-    width: 9%;
-    opacity: 0;
-    z-index: 6;
-    transform: rotate(-40deg);
-    animation-name: fadeIn, handUp2, fadeOut;
-    animation-duration: 0s, 3s, 0s;
-    animation-delay: 28.5s, 28.5s, 32s;
-    animation-fill-mode: forwards;
-}
-
 
 
 /* Library of animations */
@@ -152,6 +150,63 @@ img#point2 {
         top: 23%;
     }
 }
+
+@keyframes handRightToLeft {
+    0% {
+        left: 46%;
+        top: 68%;
+    }
+    40% {
+        left: 86%;
+        right: 68%;
+    }
+    100% {   
+        left: 5%;
+        top: 68%;
+    } 
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 46%;
+        top: 68%;
+    }
+    35% {
+        left: 5%;
+        top: 68%;
+    }
+    50% {
+        left: 46%;
+        top: 68%;
+    }
+    100% {   
+        left: 86%;
+        top: 68%;
+    } 
+}
+
+@keyframes handRight {
+    0% {
+        left: 46%;
+        top: 68%;
+    }
+    100% {
+        left: 86%;
+        top: 68%;
+    }
+}
+
+@keyframes handLeft {
+    0% {
+        left: 46%;
+        top: 68%;
+    }
+    100% {
+        left: 5%;
+        top: 68%;
+    }
+}
+
 
 @keyframes handDown {
     0% {
@@ -232,7 +287,7 @@ img#point2 {
 
 @keyframes pulseMedium {
     0% {}
-    50% {transform: scale(1.2)} 
+    50% {transform: scale(1.16)} 
     100% {transform: scale(1)} 
 }
 

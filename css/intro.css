@@ -23,7 +23,7 @@ img#sarah1a, img#sarah2, img#sarah3, img#sarah_point, img#sarah_up, img#sarah4 {
 img#sarah4 {
     animation-name: fadeIn, fadeOut, fadeIn, moveRight50, fadeOut, fadeIn, fadeOut;
     animation-duration: 4s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 1s, 4s, 3s, 4s, 6.5s, 8.48s, 16.8s;
+    animation-delay: 1.5s, 4s, 3s, 4s, 6.5s, 8.48s, 16s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 1;
@@ -129,7 +129,7 @@ img#sarah_headshot {
     opacity: 0;
     animation-name: fadeIn, fadeOut, fadeIn;
     animation-duration: 3s, 0s, 0s;
-    animation-delay: 17.1s, 48s, 63s;
+    animation-delay: 17.1s, 37s, 41s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -142,7 +142,7 @@ img#sarah_one {
     opacity: 0;
     animation-name: fadeIn, fadeOut;
     animation-duration: 0s, 0s;
-    animation-delay: 48s, 63s;
+    animation-delay: 37s, 41s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -153,9 +153,9 @@ img#cup1 {
     width: 15.5%;
     top: 40%;
     opacity: 0;
-    animation-name: fadeIn, wiggle, wiggle, pulseMedium;
-    animation-duration: 3s, 1.5s, 1.5s, 1.5s;
-    animation-delay: 17.5s, 22s, 39s, 66s;
+    animation-name: fadeIn, wiggle,  pulseMedium;
+    animation-duration: 3s, 1.5s, 1.5s;
+    animation-delay: 17.5s, 21.5s, 48s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -166,9 +166,9 @@ img#cup2 {
     width: 16%;
     top: 41%;
     opacity: 0;
-    animation-name: fadeIn, wiggle;
-    animation-duration: 3s, 1.5s;
-    animation-delay: 17.5s, 28.5s;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 17.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -179,9 +179,9 @@ img#cup3 {
     width: 14%;
     top: 40%;
     opacity: 0;
-    animation-name: fadeIn, wiggle, wiggle, pulseMedium, wiggle;
-    animation-duration: 3s, 1.5s, 1.5s, 1.5s, 1.5s;
-    animation-delay: 17.5s, 30.5s, 43.5s, 68s, 70s;
+    animation-name: fadeIn, wiggle, pulseMedium;
+    animation-duration: 3s, 1.5s, 1.5s;
+    animation-delay: 17.5s, 28s, 31s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -192,9 +192,9 @@ img#cup4 {
     width: 17%;
     top: 40%;
     opacity: 0;
-    animation-name: fadeIn, wiggle, wiggle;
-    animation-duration: 3s, 1.5s, 1.5s;
-    animation-delay: 17.5s, 32.5s, 37s;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 17.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -205,12 +205,40 @@ img#cup5 {
     width: 15%;
     top: 41%;
     opacity: 0;
-    animation-name: fadeIn, wiggle, wiggle, pulseMedium;
-    animation-duration: 3s, 1.5s, 1.5s, 1.5s;
-    animation-delay: 17.5s, 34.5s, 42s, 64s;
+    animation-name: fadeIn, wiggle;
+    animation-duration: 3s, 1.5s;
+    animation-delay: 17.5s, 25s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+
+img#point {
+    position: absolute;
+    left: 42.5%;
+    top: 72%;
+    width: 9%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, handLeftToRight, fadeOut;
+    animation-duration: 0s, 4s, 0s;
+    animation-delay: 32.5s, 32.5s, 36.5s;
+    animation-fill-mode: forwards;
+}
+
+img#point2 {
+    position: absolute;
+    left: 42.5%;
+    top: 72%;
+    width: 9%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 44s 46s;
+    animation-fill-mode: forwards;
+}
+
+
 
 /* Library of animations */
 @keyframes handUp {
@@ -226,12 +254,16 @@ img#cup5 {
 
 @keyframes handLeftToRight {
     0% {
-        left: 6%;
-        top: 70%;
+        left: 7%;
+        top: 72%;
+    }
+    40% {
+        left: 42.5%;
+        right: 72%;
     }
     100% {   
-        left: 78%;
-        top: 70%;
+        left: 79%;
+        top: 72%;
     } 
 }
 
