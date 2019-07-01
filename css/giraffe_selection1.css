@@ -1,0 +1,273 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#sarah_headshot {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 6s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 6
+}
+
+img#sarah_one {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 5s, 23.5s, 25.5s, 28s, 33s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 7
+}
+
+img#sarah_shrug {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 9s, 12.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 7
+}
+
+img#sarah_two {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 16s, 18.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 7
+}
+
+img#giraffe1 {
+    position: absolute;
+    left: 3%;
+    width: 17%;
+    top: 42%;
+    z-index: 5;
+    animation-name: wiggle, pulseSmall, wiggle, wiggle, fadeOut50, fadeOut;
+    animation-duration: 1.5s, 1s, 1s, 1s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 20s, 26s, 28s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#giraffe2 {
+    position: absolute;
+    left: 21%;
+    width: 18%;
+    top: 35%;
+    z-index: 5;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#giraffe3 {
+    position: absolute;
+    left: 40%;
+    width: 18%;
+    top: 25.5%;
+    z-index: 5;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#giraffe4 {
+    position: absolute;
+    left: 60%;
+    width: 18%;
+    top: 17%;
+    z-index: 5;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#giraffe5 {
+    position: absolute;
+    left: 80%;
+    width: 18%;
+    top: 5%;
+    z-index: 5;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#point {
+    position: absolute;
+    left: 6%;
+    top: 79%;
+    width: 7%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 20s, 28s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* Library of animations */
+@keyframes handUp {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handUp2 {
+    0% {
+        left: 73%;
+        top: 40%;
+    }
+    100% {
+        left: 89%;
+        top: 23%;
+    }
+}
+
+@keyframes handDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    50% {   
+        left: 33%;
+        top: 88%;
+    }
+    100% {
+        left: 62%;
+        top: 53%;
+    } 
+}
+
+@keyframes handDown2 {
+    0% {
+        left: 50%;
+        top: 73%;
+    }
+    100% {   
+        left: 33%;
+        top: 88%;
+    }
+}
+
+@keyframes handUpAndDown {
+    0% {
+        left: 62%;
+        top: 53%;
+    }
+    35% {   
+        left: 89%;
+        top: 23%;
+    } 
+    100% {
+        left: 33%;
+        top: 88%;
+    }
+}
+
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: .50}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.2)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}
