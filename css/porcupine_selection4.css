@@ -18,9 +18,9 @@ img#sarah_headshot {
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 21s, 24s, 34s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 6s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -32,26 +32,40 @@ img#sarah_one {
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 0s;
-    animation-delay: 20s, 24s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 5s, 25s, 27s, 29s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    z-index: 5
+    z-index: 7
 }
 
-img#sarah_left {
+img#sarah_shrug {
     position: absolute;
     left: 73%;
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 0s;
-    animation-delay: 0s, 2.5s;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 9.5s, 13.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    z-index: 6
+    z-index: 7
+}
+
+img#sarah_two {
+    position: absolute;
+    left: 73%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 17s, 19.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 7
 }
 
 img#porcupine1 {
@@ -60,9 +74,9 @@ img#porcupine1 {
     width: 17%;
     top: 46%;
     z-index: 5;
-    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 8.5s, 22.5s, 34s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 4s, 8.5s, 35s;
     animation-fill-mode: forwards;
 }
 
@@ -72,9 +86,9 @@ img#porcupine2 {
     width: 18%;
     top: 45%;
     z-index: 5;
-    animation-name: wiggle, wiggle, fadeOut;
-    animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 22.5s, 34s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 4s, 8.5s, 35s;
     animation-fill-mode: forwards;
 }
 
@@ -84,9 +98,9 @@ img#porcupine3 {
     width: 18%;
     top: 43%;
     z-index: 5;
-    animation-name: wiggle, pulseMedium, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
-    animation-delay: 1s, 11s, 13.5s, 22.5s, 28s, 34s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 4s, 8.5s, 35s;
     animation-fill-mode: forwards;
 }
 
@@ -96,9 +110,9 @@ img#porcupine4 {
     width: 18%;
     top: 39%;
     z-index: 5;
-    animation-name: wiggle, wiggle, fadeOut;
-    animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 22.5s, 34s;
+    animation-name: wiggle, pulseSmall, wiggle, wiggle, fadeOut50, fadeOut;
+    animation-duration: 1.5s, 1s, 1s, 1s, 1s, 0s;
+    animation-delay: 4s, 8.5s, 20.5s, 27.5s, 28.5s, 35s;
     animation-fill-mode: forwards;
 }
 
@@ -108,37 +122,25 @@ img#porcupine5 {
     width: 18%;
     top: 35%;
     z-index: 5;
-    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 6.5s, 22.5s, 34s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 4s, 8.5s, 35s;
     animation-fill-mode: forwards;
 }
 
 img#point {
     position: absolute;
-    left: 46%;
+    left: 66%;
     top: 68%;
     width: 9%;
     opacity: 0;
     z-index: 6;
-    animation-name: fadeOut, fadeIn, handRightToLeft, fadeOut, fadeIn, handLeftToRight, fadeOut, fadeIn, handRight, fadeOut;
-    animation-duration: 0s, 0s, 3.5s, 0s, 0s, 4s, 0s, 0s, 2s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6s, 14.5s, 14.5s, 19s, 31s, 31s, 34s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 20.5s, 28.5s;
     animation-fill-mode: forwards;
 }
 
-img#point2 {
-    position: absolute;
-    left: 73%;
-    top: 40%;
-    width: 9%;
-    opacity: 0;
-    z-index: 6;
-    animation-name: fadeIn, handLeft, fadeOut;
-    animation-duration: 0s, 2s, 0s;
-    animation-delay: 31s, 31s, 34s;
-    animation-fill-mode: forwards;
-}
 
 
 /* Library of animations */
@@ -163,63 +165,6 @@ img#point2 {
         top: 23%;
     }
 }
-
-@keyframes handRightToLeft {
-    0% {
-        left: 46%;
-        top: 68%;
-    }
-    40% {
-        left: 86%;
-        right: 68%;
-    }
-    100% {   
-        left: 5%;
-        top: 68%;
-    } 
-}
-
-@keyframes handLeftToRight {
-    0% {
-        left: 46%;
-        top: 68%;
-    }
-    35% {
-        left: 5%;
-        top: 68%;
-    }
-    50% {
-        left: 46%;
-        top: 68%;
-    }
-    100% {   
-        left: 86%;
-        top: 68%;
-    } 
-}
-
-@keyframes handRight {
-    0% {
-        left: 66%;
-        top: 68%;
-    }
-    100% {
-        left: 86%;
-        top: 68%;
-    }
-}
-
-@keyframes handLeft {
-    0% {
-        left: 26%;
-        top: 68%;
-    }
-    100% {
-        left: 6%;
-        top: 68%;
-    }
-}
-
 
 @keyframes handDown {
     0% {
@@ -300,7 +245,7 @@ img#point2 {
 
 @keyframes pulseMedium {
     0% {}
-    50% {transform: scale(1.16)} 
+    50% {transform: scale(1.2)} 
     100% {transform: scale(1)} 
 }
 

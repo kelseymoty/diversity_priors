@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/porcupine_average.css">
+    <link rel="stylesheet" href="css/porcupine_selection4.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
     <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
@@ -17,16 +17,17 @@
 <!-- IMAGES -->
 <div id="images">
         <img class="point" id="point" src="assets/images/sarah/point-02.png" />
-        <img class="point" id="point2" src="assets/images/sarah/point-02.png" />
         <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
         <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
-        <img class="sarah_box" id="sarah_left" src="assets/images/sarah/sarah_left.png" />
+        <img class="sarah_box" id="sarah_shrug" src="assets/images/sarah/sarah_shrug1.png" />
+        <img class="sarah_box" id="sarah_two" src="assets/images/sarah/sarah_two.png" />
         <img class="porcupine" id="porcupine1" src="assets/images/porcupine/porcupine1.png" />
         <img class="porcupine" id="porcupine2" src="assets/images/porcupine/porcupine2.png" />
         <img class="porcupine" id="porcupine3" src="assets/images/porcupine/porcupine3.png" />
         <img class="porcupine" id="porcupine4" src="assets/images/porcupine/porcupine4.png" />
         <img class="porcupine" id="porcupine5" src="assets/images/porcupine/porcupine5.png" />
     </div>
+
 
 
 <!-- AUDIO -->
@@ -37,13 +38,13 @@
     <!-- onended="document.getElementById('').play()" finds the next audio to play
         after current audio ends and plays it -->
 
-    <!-- AUDIO 1: Porcupine Intro  -->
+    <!-- AUDIO 1: Porcupine Selection  -->
     <audio 
     id="audio" 
     onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 000)" 
     onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
 >
-    <source src="assets/audio/porcupine_intro.m4a" />
+    <source src="assets/audio/porcupine_selection.m4a" />
 </audio>
 
 <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -53,30 +54,26 @@ They've discussed changing this policy back, but either way, using the audio tag
 or the iframe solution should get the audio to autoplay. You only need to use the iframe
 solution for the first audio. All other audio afterward will successfully autoplay  -->
 <!-- <iframe 
-    src="assets/audio/porcupine_intro.m4a" 
+    src="assets/audio/porcupine_selection.m4a" 
     allow="autoplay" 
     style="display:none" 
     id="audio1">
 </iframe> -->
 
-
-<!-- AUDIO 2: Porcupine All -->
+<!-- AUDIO 2: Porcupine Response -->
 <audio 
     id="audio2" 
     onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
 >
-        <source src="assets/audio/porcupine_all.m4a" />
+        <source src="assets/audio/porcupine_response.mp3" />
 
+        <script>
+                var audio = document.getElementById("audio2");
+                audio.volume = 0.4;
+            </script>
+        
     </audio>
 
-<!-- AUDIO 3: Porcupine Average -->
-<audio 
-    id="audio3" 
-    onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
->
-        <source src="assets/audio/porcupine_average.mp3" />
-    
-    </audio>
 
 </body>
 </html>
