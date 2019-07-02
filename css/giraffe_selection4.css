@@ -14,13 +14,13 @@ div#images {
 
 img#sarah_headshot {
     position: absolute;
-    left: 73%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
     animation-name: fadeIn, fadeOut;
     animation-duration: 0s, 0s;
-    animation-delay: 5s, 32s;
+    animation-delay: 6s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -28,13 +28,13 @@ img#sarah_headshot {
 
 img#sarah_one {
     position: absolute;
-    left: 73%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 0s, 5s, 22.5s, 25s, 27s, 32s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 5s, 23.5s, 25.5s, 28s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 7
@@ -42,13 +42,13 @@ img#sarah_one {
 
 img#sarah_shrug {
     position: absolute;
-    left: 73%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
     animation-name: fadeOut, fadeIn, fadeOut;
     animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 9s, 12s;
+    animation-delay: 0s, 9s, 12.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 7
@@ -56,89 +56,88 @@ img#sarah_shrug {
 
 img#sarah_two {
     position: absolute;
-    left: 73%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
     animation-name: fadeOut, fadeIn, fadeOut;
     animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 15s, 18s;
+    animation-delay: 0s, 16s, 18.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 7
 }
 
-img#cheetah1 {
+img#giraffe1 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 80%;
+    left: 3%;
+    width: 17%;
+    top: 42%;
     z-index: 5;
-    animation-name: pulseSmall, fadeOut;
-    animation-duration: 1.5s, 0s;
-    animation-delay: 7.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah2 {
+img#giraffe2 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 58%;
+    left: 21%;
+    width: 18%;
+    top: 35%;
     z-index: 5;
-    animation-name: pulseSmall, fadeOut;
-    animation-duration: 1.5s, 0s;
-    animation-delay: 7.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah3 {
+img#giraffe3 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 40%;
+    left: 40%;
+    width: 18%;
+    top: 25.5%;
     z-index: 5;
-    animation-name: pulseSmall, fadeOut;
-    animation-duration: 1.5s, 0s;
-    animation-delay: 7.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah4 {
+img#giraffe4 {
     position: absolute;
-    left: 0%;
-    width: 90%;
+    left: 60%;
+    width: 18%;
     top: 17%;
     z-index: 5;
-    animation-name: pulseSmall, fadeOut;
-    animation-duration: 1.5s, 0s;
-    animation-delay: 7.5s, 32s;
+    animation-name: wiggle, pulseSmall, wiggle, wiggle, fadeOut50, fadeOut;
+    animation-duration: 1.5s, 1s, 1s, 1s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 20s, 26s, 28s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah5 {
+img#giraffe5 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: -3%;
+    left: 80%;
+    width: 18%;
+    top: 5%;
     z-index: 5;
-    animation-name: pulseSmall, wiggle, wiggle, fadeOut50, fadeOut;
-    animation-duration: 1.5s, 1s, 1s, 1s, 0s;
-    animation-delay: 7.5s, 19s, 25s, 26s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
 img#point {
     position: absolute;
-    left: 95%;
-    top: 1%;
-    width: 9%;
+    left: 63%;
+    top: 79%;
+    width: 7%;
     opacity: 0;
     z-index: 6;
-    transform: rotate(-90deg);
     animation-name: fadeIn, fadeOut;
     animation-duration: 0s, 0s;
-    animation-delay: 19s, 27s;
+    animation-delay: 20s, 28s;
     animation-fill-mode: forwards;
 }
 

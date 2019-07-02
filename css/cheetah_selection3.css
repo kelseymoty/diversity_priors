@@ -128,18 +128,6 @@ img#cheetah5 {
     animation-fill-mode: forwards;
 }
 
-img#heart {
-    position: absolute;
-    left: 77%;
-    width: 18%;
-    top: 36%;
-    z-index: 5;
-    animation-name: fadeOut, fadeIn, pulseSmall, fadeOut;
-    animation-duration: 0s, 1s, 1s, 1s;
-    animation-delay: 0s, 10s, 10.5s, 12s;
-    animation-fill-mode: forwards;
-}
-
 img#point {
     position: absolute;
     left: 70%;

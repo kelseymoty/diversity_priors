@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/cheetah_extreme.css">
+    <link rel="stylesheet" href="css/giraffe_selection2.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
     <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
@@ -19,11 +19,13 @@
         <img class="point" id="point" src="assets/images/sarah/point-02.png" />
         <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
         <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
-        <img class="cheetah" id="cheetah1" src="assets/images/cheetah/cheetah1.jpeg" />
-        <img class="cheetah" id="cheetah2" src="assets/images/cheetah/cheetah2.jpeg" />
-        <img class="cheetah" id="cheetah3" src="assets/images/cheetah/cheetah3.jpeg" />
-        <img class="cheetah" id="cheetah4" src="assets/images/cheetah/cheetah4.jpeg" />
-        <img class="cheetah" id="cheetah5" src="assets/images/cheetah/cheetah5.jpg" />
+        <img class="sarah_box" id="sarah_shrug" src="assets/images/sarah/sarah_shrug1.png" />
+        <img class="sarah_box" id="sarah_two" src="assets/images/sarah/sarah_two.png" />
+        <img class="giraffe" id="giraffe1" src="assets/images/giraffe/giraffe 1.png" />
+        <img class="giraffe" id="giraffe2" src="assets/images/giraffe/giraffe 2.png" />
+        <img class="giraffe" id="giraffe3" src="assets/images/giraffe/giraffe 3.png" />
+        <img class="giraffe" id="giraffe4" src="assets/images/giraffe/giraffe 4.png" />
+        <img class="giraffe" id="giraffe5" src="assets/images/giraffe/giraffe 5.png" />
     </div>
 
 
@@ -35,13 +37,13 @@
     <!-- onended="document.getElementById('').play()" finds the next audio to play
         after current audio ends and plays it -->
 
-    <!-- AUDIO 1: Cheetah Intro  -->
+    <!-- AUDIO 1: Giraffe Selection -->
     <audio 
     id="audio" 
     onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 000)" 
     onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
 >
-    <source src="assets/audio/cheetah_intro.m4a" />
+    <source src="assets/audio/giraffe_selection.m4a" />
 </audio>
 
 <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -51,30 +53,22 @@ They've discussed changing this policy back, but either way, using the audio tag
 or the iframe solution should get the audio to autoplay. You only need to use the iframe
 solution for the first audio. All other audio afterward will successfully autoplay  -->
 <!-- <iframe 
-    src="assets/audio/cheetah_intro.m4a" 
+    src="assets/audio/giraffe_selection.m4a" 
     allow="autoplay" 
     style="display:none" 
     id="audio1">
 </iframe> -->
 
 
-<!-- AUDIO 2: Cheetah All -->
+<!-- AUDIO 2: Giraffe Response -->
 <audio 
     id="audio2" 
     onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
 >
-        <source src="assets/audio/cheetah_all.m4a" />
+        <source src="assets/audio/giraffe_response.m4a" />
 
     </audio>
 
-<!-- AUDIO 3: Cheetah Extreme -->
-<audio 
-    id="audio3" 
-    onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
->
-        <source src="assets/audio/cheetah_extreme.m4a" />
-
-    </audio>
 
 </body>
 </html>
