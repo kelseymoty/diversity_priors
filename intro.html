@@ -29,6 +29,8 @@
             <img class="point" id="point" src="assets/images/sarah/point-02.png" />
             <img class="point" id="point2" src="assets/images/sarah/point-02.png" />
             <img class="point" id="point3" src="assets/images/sarah/point-02.png" />
+            <img class="point" id="point4" src="assets/images/sarah/point-02.png" />
+            <img class="point" id="point5" src="assets/images/sarah/point-02.png" />
             <img class="animals" id="pig" src="assets/images/animals/download-4.jpg" />
             <img class="animals" id="cow" src="assets/images/animals/download-3.jpg" />
             <img class="animals" id="croc" src="assets/images/animals/download-5.jpg" />
@@ -100,7 +102,60 @@
             var audio = document.getElementById("audio4");
             audio.volume = 0.3;
         </script>
-       
+        </audio>
+
+    <!-- AUDIO 5: Scale Water Most -->
+    <audio 
+        id="audio5"
+        onended="setTimeout(function () { document.getElementById('audio6').play();}, 2500);"
+        >
+        <source src="assets/audio/scale_water_most.mp3" />  
+
+    <script>
+        var audio = document.getElementById("audio5");
+        audio.volume = 0.3;
+    </script>
     </audio>
+
+     <!-- AUDIO 6: Scale Water Most Feedback -->
+     <audio 
+     id="audio6"
+     onended="setTimeout(function () { document.getElementById('audio7').play();}, 000);"
+     >
+     <source src="assets/audio/scale_water_most_feedback.mp3" />  
+
+ <script>
+     var audio = document.getElementById("audio6");
+     audio.volume = 0.3;
+ </script>
+ </audio>
+
+      <!-- AUDIO 7: Scale Water Middle -->
+      <audio 
+      id="audio7"
+      onended="setTimeout(function () { document.getElementById('audio8').play();}, 2000);"
+      >
+      <source src="assets/audio/scale_water_middle.mp3" />  
+ 
+  <script>
+      var audio = document.getElementById("audio7");
+      audio.volume = 0.3;
+  </script>
+  </audio>
+
+        <!-- AUDIO 8: Scale Water Middle -->
+        <audio 
+        id="audio8"
+        onended="setTimeout(function () { document.getElementById('audio9').play();}, 000);"
+        >
+        <source src="assets/audio/scale_water_middle_feedback.mp3" />  
+   
+    <script>
+        var audio = document.getElementById("audio8");
+        audio.volume = 0.3;
+    </script>
+    </audio>
+  
+
 </body>
 </html>

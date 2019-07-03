@@ -14,13 +14,13 @@ div#images {
 
 img#sarah_headshot {
     position: absolute;
-    left: 75%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
     animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 20s, 23s, 32s;
+    animation-delay: 0s, 20s, 24s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -28,103 +28,128 @@ img#sarah_headshot {
 
 img#sarah_one {
     position: absolute;
-    left: 75%;
-    width: 22%;
-    top: 76%;
+    left: 2%;
+    width: 25%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 20s, 23s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 20s, 24s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#sarah_right {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 0s, 2.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
 }
 
-img#cheetah1 {
+img#skunk1 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 80%;
+    left: 6%;
+    width: 13%;
+    top: 37%;
     z-index: 5;
-    animation-name: pulseSmall, wiggle, fadeOut;
-    animation-duration: 1.5s, 1s, 0s;
-    animation-delay: 8.5s, 21.5s, 32s;
+    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 0s;
+    animation-delay: 1s, 9s, 21s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah2 {
+img#skunk2 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 58%;
+    left: 24%;
+    width: 13%;
+    top: 29%;
     z-index: 5;
-    animation-name: wiggle, fadeOut;
-    animation-duration: 1s, 0s;
-    animation-delay: 21.5s, 32s;
+    animation-name: wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 0s;
+    animation-delay: 1s, 21s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah3 {
+img#skunk3 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 40%;
+    left: 41%;
+    width: 14.3%;
+    top: 22%;
     z-index: 5;
-    animation-name: pulseSmall, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1.5s, 1s, 1s, 1.5s, 0s;
-    animation-delay: 11s, 13s, 21.5s, 27s, 32s;
+    animation-name: wiggle, pulseMedium, pulseMedium, wiggle, pulseMedium, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
+    animation-delay: 1s, 11s, 13s, 21s, 27s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah4 {
+img#skunk4 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: 17%;
+    left: 59%;
+    width: 15%;
+    top: 14%;
     z-index: 5;
-    animation-name: wiggle, fadeOut;
-    animation-duration: 1s, 0s;
-    animation-delay: 21.5s, 32s;
+    animation-name: wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 0s;
+    animation-delay: 1s, 21s, 33s;
     animation-fill-mode: forwards;
 }
 
-img#cheetah5 {
+img#skunk5 {
     position: absolute;
-    left: 0%;
-    width: 90%;
-    top: -3%;
+    left: 77%;
+    width: 16%;
+    top: 2.5%;
     z-index: 5;
-    animation-name: pulseSmall, wiggle, fadeOut;
-    animation-duration: 1.5s, 1s, 0s;
-    animation-delay: 6.5s, 21.5s, 32s;
+    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 0s;
+    animation-delay: 1s, 7.5s, 21s, 33s;
     animation-fill-mode: forwards;
 }
 
 img#point {
     position: absolute;
-    left: 62%;
-    top: 53%;
-    width: 9%;
+    left: 44%;
+    top: 79%;
+    width: 7%;
     opacity: 0;
     z-index: 6;
-    transform: rotate(-40deg);
-    animation-name: fadeOut, fadeIn, handUpAndDown, fadeOut, fadeIn, handDown, handUp, fadeOut, fadeIn, handDown2, fadeOut;
-    animation-duration: 0s, 0s, 3.5s, 0s, 0s, 2s, 1.75s, 0s, 0s, 3s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6s, 14s, 14s, 16s, 18s, 28.5s, 28.5s, 32s;
+    animation-name: fadeOut, fadeIn, handRightToLeft, fadeOut;
+    animation-duration: 0s, 0s, 4s, 0s;
+    animation-delay: 0s, 2.5s, 2.5s, 6.5s;
     animation-fill-mode: forwards;
 }
 
 img#point2 {
     position: absolute;
     left: 73%;
-    top: 40%;
-    width: 9%;
+    top: 79%;
+    width: 7%;
     opacity: 0;
     z-index: 6;
-    transform: rotate(-40deg);
-    animation-name: fadeIn, handUp2, fadeOut;
-    animation-duration: 0s, 3s, 0s;
-    animation-delay: 28.5s, 28.5s, 32s;
+    animation-name: fadeIn, handLeft, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 29.5s, 29.5s, 33s;
+    animation-fill-mode: forwards;
+}
+
+img#point3 {
+    position: absolute;
+    left: 44%;
+    top: 79%;
+    width: 7%;
+    opacity: 0;
+    z-index: 6;
+    animation-name: fadeIn, handLeftToRight, fadeOut, fadeIn, handRight, fadeOut;
+    animation-duration: 0s, 4s, 0s, 0s, 2s, 0s;
+    animation-delay: 13s, 13.5s, 19s, 29.5s, 29.5s, 33s;
     animation-fill-mode: forwards;
 }
 
@@ -152,6 +177,63 @@ img#point2 {
         top: 23%;
     }
 }
+
+@keyframes handRightToLeft {
+    0% {
+        left: 44%;
+        top: 79%;
+    }
+    40% {
+        left: 81%;
+        right: 79%;
+    }
+    100% {   
+        left: 8%;
+        top: 79%;
+    } 
+}
+
+@keyframes handLeftToRight {
+    0% {
+        left: 44%;
+        top: 79%;
+    }
+    25% {
+        left: 8%;
+        top: 79%;
+    }
+    50% {
+        left: 44%;
+        top: 79%;
+    }
+    100% {   
+        left: 81%;
+        top: 79%;
+    } 
+}
+
+@keyframes handRight {
+    0% {
+        left: 63%;
+        top: 79%;
+    }
+    100% {
+        left: 81%;
+        top: 79%;
+    }
+}
+
+@keyframes handLeft {
+    0% {
+        left: 26%;
+        top: 79%;
+    }
+    100% {
+        left: 8%;
+        top: 79%;
+    }
+}
+
 
 @keyframes handDown {
     0% {
@@ -232,7 +314,7 @@ img#point2 {
 
 @keyframes pulseMedium {
     0% {}
-    50% {transform: scale(1.2)} 
+    50% {transform: scale(1.16)} 
     100% {transform: scale(1)} 
 }
 
