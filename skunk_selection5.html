@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/skunk_selection5.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- IMAGES -->
+<div id="images">
+        <img class="point" id="point" src="assets/images/sarah/point-02.png" />
+        <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
+        <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
+        <img class="sarah_box" id="sarah_shrug" src="assets/images/sarah/sarah_shrug1.png" />
+        <img class="sarah_box" id="sarah_two" src="assets/images/sarah/sarah_two.png" />
+        <img class="skunk" id="skunk1" src="assets/images/skunk/skunk1.png" />
+        <img class="skunk" id="skunk2" src="assets/images/skunk/skunk2.png" />
+        <img class="skunk" id="skunk3" src="assets/images/skunk/skunk3.png" />
+        <img class="skunk" id="skunk4" src="assets/images/skunk/skunk4.png" />
+        <img class="skunk" id="skunk5" src="assets/images/skunk/skunk5.png" />
+    </div>
+
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: Skunk Selection -->
+    <audio 
+    id="audio" 
+    onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 000)" 
+    onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
+>
+    <source src="assets/audio/skunk_selection.m4a" />
+</audio>
+
+<!-- I had some weird issues with chrome (because of the autoplay issues) that 
+could oddly be fixed if I opened the html in the web browser with this code uncommented
+and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+They've discussed changing this policy back, but either way, using the audio tag above
+or the iframe solution should get the audio to autoplay. You only need to use the iframe
+solution for the first audio. All other audio afterward will successfully autoplay  -->
+<!-- <iframe 
+    src="assets/audio/skunk_selection.m4a" 
+    allow="autoplay" 
+    style="display:none" 
+    id="audio1">
+</iframe> -->
+
+
+<!-- AUDIO 2: Skunk Response -->
+<audio 
+    id="audio2" 
+    onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
+>
+        <source src="assets/audio/skunk_response.mp3" />
+       
+       <script>
+            var audio = document.getElementById("audio2");
+            audio.volume = 0.3;
+        </script>
+
+    </audio>
+
+
+</body>
+</html>

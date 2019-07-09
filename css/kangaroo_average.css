@@ -20,7 +20,7 @@ img#sarah_headshot {
     opacity: 0%;
     animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 20s, 24s, 33s;
+    animation-delay: 0s, 20s, 24s, 34s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -54,63 +54,63 @@ img#sarah_right {
     z-index: 6
 }
 
-img#skunk1 {
+img#kangaroo1 {
     position: absolute;
-    left: 6%;
-    width: 13%;
-    top: 37%;
+    left: 3%;
+    width: 17%;
+    top: 42%;
     z-index: 5;
     animation-name: wiggle, pulseMedium, wiggle, fadeOut;
     animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 9s, 21s, 33s;
+    animation-delay: 1s, 8.5s, 21s, 34s;
     animation-fill-mode: forwards;
 }
 
-img#skunk2 {
+img#kangaroo2 {
     position: absolute;
-    left: 24%;
-    width: 13%;
-    top: 29%;
+    left: 21%;
+    width: 18%;
+    top: 35%;
     z-index: 5;
     animation-name: wiggle, wiggle, fadeOut;
     animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 21s, 33s;
+    animation-delay: 1s, 21s, 34s;
     animation-fill-mode: forwards;
 }
 
-img#skunk3 {
+img#kangaro3 {
     position: absolute;
-    left: 41%;
-    width: 14.3%;
-    top: 22%;
+    left: 40%;
+    width: 18%;
+    top: 25.5%;
     z-index: 5;
-    animation-name: wiggle, pulseMedium, pulseMedium, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 1s, 0s;
-    animation-delay: 1s, 11s, 13s, 21s, 33s;
+    animation-name: wiggle, pulseMedium, pulseMedium, wiggle, pulseMedium, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
+    animation-delay: 1s, 11s, 13s, 21s, 28s, 34s;
     animation-fill-mode: forwards;
 }
 
-img#skunk4 {
+img#kangaro4 {
     position: absolute;
-    left: 59%;
-    width: 15%;
-    top: 14%;
+    left: 60%;
+    width: 18%;
+    top: 17%;
     z-index: 5;
     animation-name: wiggle, wiggle, fadeOut;
     animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 21s, 33s;
+    animation-delay: 1s, 21s, 34s;
     animation-fill-mode: forwards;
 }
 
-img#skunk5 {
+img#kangaro5 {
     position: absolute;
-    left: 77%;
-    width: 16%;
-    top: 2.5%;
+    left: 80%;
+    width: 18%;
+    top: 5%;
     z-index: 5;
-    animation-name: wiggle, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 1.5s, 0s;
-    animation-delay: 1s, 7.5s, 21s, 27s, 33s;
+    animation-name: wiggle, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 0s;
+    animation-delay: 1s, 6.5s, 21s, 34s;
     animation-fill-mode: forwards;
 }
 
@@ -121,22 +121,22 @@ img#point {
     width: 7%;
     opacity: 0;
     z-index: 6;
-    animation-name: fadeOut, fadeIn, handRightToLeft, fadeOut;
-    animation-duration: 0s, 0s, 4s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6.5s;
+    animation-name: fadeOut, fadeIn, handRightToLeft, fadeOut, fadeIn, handLeftToRight, fadeOut, fadeIn, handRight, fadeOut;
+    animation-duration: 0s, 0s, 4s, 0s, 0s, 4s, 0s, 0s, 2s, 0s;
+    animation-delay: 0s, 2.5s, 2.5s, 6.5s, 14.5s, 14.5s, 19s, 31s, 31s, 34s;
     animation-fill-mode: forwards;
 }
 
 img#point2 {
     position: absolute;
-    left: 44%;
+    left: 73%;
     top: 79%;
     width: 7%;
     opacity: 0;
     z-index: 6;
-    animation-name: fadeIn, handLeftToRight, fadeOut, fadeIn, handRightToLeft2, fadeOut;
-    animation-duration: 0s, 4s, 0s, 0s, 2s, 0s;
-    animation-delay: 13s, 13.5s, 19s, 29.5s, 29.5s, 33s;
+    animation-name: fadeIn, handLeft, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 31s, 31s, 34s;
     animation-fill-mode: forwards;
 }
 
@@ -170,22 +170,11 @@ img#point2 {
         top: 79%;
     }
     40% {
-        left: 81%;
+        left: 84%;
         right: 79%;
     }
     100% {   
-        left: 8%;
-        top: 79%;
-    } 
-}
-
-@keyframes handRightToLeft2 {
-    0% {
-        left: 63%;
-        top: 79%;
-    }
-    100% {   
-        left: 8%;
+        left: 5%;
         top: 79%;
     } 
 }
@@ -195,8 +184,8 @@ img#point2 {
         left: 44%;
         top: 79%;
     }
-    25% {
-        left: 8%;
+    35% {
+        left: 5%;
         top: 79%;
     }
     50% {
@@ -204,7 +193,7 @@ img#point2 {
         top: 79%;
     }
     100% {   
-        left: 81%;
+        left: 84%;
         top: 79%;
     } 
 }
@@ -215,18 +204,18 @@ img#point2 {
         top: 79%;
     }
     100% {
-        left: 81%;
+        left: 84%;
         top: 79%;
     }
 }
 
 @keyframes handLeft {
     0% {
-        left: 26%;
+        left: 24%;
         top: 79%;
     }
     100% {
-        left: 8%;
+        left: 6%;
         top: 79%;
     }
 }
