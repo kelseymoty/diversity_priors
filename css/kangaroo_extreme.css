@@ -84,9 +84,9 @@ img#kangaroo3 {
     width: 15%;
     top: 34%;
     z-index: 5;
-    animation-name: wiggle, pulseSmall, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
-    animation-delay: 1s, 11s, 13s, 19.5s, 26s, 32s;
+    animation-name: wiggle, pulseSmall, pulseMedium, wiggle, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 1s, 0s;
+    animation-delay: 1s, 11s, 13s, 19.5s, 32s;
     animation-fill-mode: forwards;
 }
 
@@ -108,9 +108,9 @@ img#kangaroo5 {
     width: 15%;
     top: 1%;
     z-index: 5;
-    animation-name: wiggle, pulseSmall, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 7s, 19.5s, 32s;
+    animation-name: wiggle, pulseSmall, wiggle, pulseMedium, fadeOut;
+    animation-duration: 1s, 1.5s, 1s, 1.5s, 0s;
+    animation-delay: 1s, 7s, 19.5s, 26s, 32s;
     animation-fill-mode: forwards;
 }
 
@@ -122,9 +122,9 @@ img#point {
     opacity: 0;
     transform: rotate(-25deg);
     z-index: 6;
-    animation-name: fadeOut, fadeIn, handUpAndDown, fadeOut, fadeIn, handDownAndUp, fadeOut, fadeIn, handDown2, fadeOut;
-    animation-duration: 0s, 0s, 4s, 0s, 0s, 3s, 0s, 0s, 2s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6.5s, 13.75s, 13.75s, 17s, 28.5s, 28.5s, 32s;
+    animation-name: fadeOut, fadeIn, handUpAndDown, fadeOut, fadeIn, handDownAndUp, fadeOut;
+    animation-duration: 0s, 0s, 4s, 0s, 0s, 3s, 0s;
+    animation-delay: 0s, 2.5s, 2.5s, 6.5s, 13.75s, 13.75s, 17s;
     animation-fill-mode: forwards;
 }
 
@@ -136,8 +136,8 @@ img#point2 {
     opacity: 0;
     transform: rotate(-25deg);
     z-index: 6;
-    animation-name: fadeIn, handUp3, fadeOut;
-    animation-duration: 0s, 2s, 0s;
+    animation-name: fadeIn, handDown3, fadeOut;
+    animation-duration: 0s, 2.5s, 0s;
     animation-delay: 28.5s, 28.5s, 32s;
     animation-fill-mode: forwards;
 }
@@ -170,14 +170,14 @@ img#point2 {
     }
 }
 
-@keyframes handUp3 {
+@keyframes handDown3 {
     0% {
         left: 76%;
         top: 53%;
     }
     100% {
-        left: 91%;
-        top: 39%;
+        left: 15%;
+        top: 90%;
     }
 }
 

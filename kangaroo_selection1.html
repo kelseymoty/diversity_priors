@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/kangaroo_average.css">
+    <link rel="stylesheet" href="css/kangaroo_selection1.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
     <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
@@ -17,10 +17,10 @@
 <!-- IMAGES -->
 <div id="images">
         <img class="point" id="point" src="assets/images/sarah/point-02.png" />
-        <img class="point" id="point2" src="assets/images/sarah/point-02.png" />
         <img class="sarah_box" id="sarah_headshot" src="assets/images/sarah/sarah_headshot.png" />
         <img class="sarah_box" id="sarah_one" src="assets/images/sarah/sarah_one.png" />
-        <img class="sarah_box" id="sarah_right" src="assets/images/sarah/sarah_right.png" />
+        <img class="sarah_box" id="sarah_shrug" src="assets/images/sarah/sarah_shrug1.png" />
+        <img class="sarah_box" id="sarah_two" src="assets/images/sarah/sarah_two.png" />
         <img class="kangaroo" id="kangaroo1" src="assets/images/kangaroo/kangaroo1.png"/>
         <img class="kangaroo" id="kangaroo2" src="assets/images/kangaroo/kangaroo2.png"/>
         <img class="kangaroo" id="kangaroo3" src="assets/images/kangaroo/kangaroo3.png"/>
@@ -37,13 +37,13 @@
     <!-- onended="document.getElementById('').play()" finds the next audio to play
         after current audio ends and plays it -->
 
-    <!-- AUDIO 1: Kangaroo Intro  -->
+    <!-- AUDIO 1: Kangaroo Selection  -->
     <audio 
     id="audio" 
     onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 0500)" 
-    onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);" 
+    onended="setTimeout(function () { document.getElementById('audio2').play();}, 000);" 
     >
-    <source src="assets/audio/kangaroo_intro.mp3" />
+    <source src="assets/audio/kangaroo_selection.mp3" />
 </audio>
 
 <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -53,30 +53,20 @@ They've discussed changing this policy back, but either way, using the audio tag
 or the iframe solution should get the audio to autoplay. You only need to use the iframe
 solution for the first audio. All other audio afterward will successfully autoplay  -->
 <!-- <iframe 
-    src="assets/audio/kangaroo_intro.mp3" 
+    src="assets/audio/kangaroo_selection.mp3" 
     allow="autoplay" 
     style="display:none" 
     id="audio1">
 </iframe> -->
 
 
-<!-- AUDIO 2: Kangaroo All -->
+<!-- AUDIO 2: Kangaroo Response -->
 <audio 
     id="audio2" 
     onended="setTimeout(function () { document.getElementById('audio3').play();}, 000);"
 >
-        <source src="assets/audio/kangaroo_all.mp3" />
+        <source src="assets/audio/kangaroo_response.mp3" />
 
-    </audio>
-
-
-<!-- AUDIO 3: Kangaroo Average -->
-<audio 
-    id="audio3" 
-    onended="setTimeout(function () { document.getElementById('audio4').play();}, 000);"
->
-        <source src="assets/audio/kangaroo_average.mp3" />
-    
     </audio>
 
 </body>

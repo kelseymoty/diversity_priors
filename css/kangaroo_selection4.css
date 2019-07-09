@@ -18,9 +18,9 @@ img#sarah_headshot {
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 0s, 18.5s, 22s, 32s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 6s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 6
@@ -32,26 +32,40 @@ img#sarah_one {
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 0s;
-    animation-delay: 18.5s, 22s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 5s, 23.5s, 25.5s, 28s, 33s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    z-index: 5
+    z-index: 7
 }
 
-img#sarah_right {
+img#sarah_shrug {
     position: absolute;
     left: 2%;
     width: 25%;
     top: 3%;
     opacity: 0%;
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 0s;
-    animation-delay: 0s, 2.5s;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 8.5s, 12s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    z-index: 6
+    z-index: 7
+}
+
+img#sarah_two {
+    position: absolute;
+    left: 2%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s;
+    animation-delay: 0s, 15s, 17.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 7
 }
 
 img#kangaroo1 {
@@ -60,9 +74,9 @@ img#kangaroo1 {
     width: 26%;
     top: 62%;
     z-index: 5;
-    animation-name: wiggle, pulseSmall, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 8.5s, 19.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
@@ -72,9 +86,9 @@ img#kangaroo2 {
     width: 18%;
     top: 48%;
     z-index: 5;
-    animation-name: wiggle, wiggle, fadeOut;
-    animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 19.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
@@ -84,9 +98,9 @@ img#kangaroo3 {
     width: 15%;
     top: 34%;
     z-index: 5;
-    animation-name: wiggle, pulseSmall, pulseMedium, wiggle, pulseMedium, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 1s, 1.5s, 0s;
-    animation-delay: 1s, 11s, 13s, 19.5s, 26s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
@@ -96,9 +110,9 @@ img#kangaroo4 {
     width: 16%;
     top: 17%;
     z-index: 5;
-    animation-name: wiggle, wiggle, fadeOut;
-    animation-duration: 1s, 1s, 0s;
-    animation-delay: 1s, 19.5s, 32s;
+    animation-name: wiggle, pulseSmall,  wiggle, wiggle, fadeOut50, fadeOut;
+    animation-duration: 1.5s, 1s, 1s, 1s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 19s, 26.5s, 28s, 33s;
     animation-fill-mode: forwards;
 }
 
@@ -108,39 +122,26 @@ img#kangaroo5 {
     width: 15%;
     top: 1%;
     z-index: 5;
-    animation-name: wiggle, pulseSmall, wiggle, fadeOut;
-    animation-duration: 1s, 1.5s, 1s, 0s;
-    animation-delay: 1s, 7s, 19.5s, 32s;
+    animation-name: wiggle, pulseSmall, fadeOut;
+    animation-duration: 1.5s, 1s, 0s;
+    animation-delay: 3.5s, 7.5s, 33s;
     animation-fill-mode: forwards;
 }
 
 img#point {
     position: absolute;
-    left: 55%;
-    top: 68%;
+    left: 75%;
+    top: 50%;
     width: 7%;
     opacity: 0;
-    transform: rotate(-25deg);
+    transform: rotate(-20deg);
     z-index: 6;
-    animation-name: fadeOut, fadeIn, handUpAndDown, fadeOut, fadeIn, handDownAndUp, fadeOut, fadeIn, handDown2, fadeOut;
-    animation-duration: 0s, 0s, 4s, 0s, 0s, 3s, 0s, 0s, 2s, 0s;
-    animation-delay: 0s, 2.5s, 2.5s, 6.5s, 13.75s, 13.75s, 17s, 28.5s, 28.5s, 32s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 19s, 28s;
     animation-fill-mode: forwards;
 }
 
-img#point2 {
-    position: absolute;
-    left: 73%;
-    top: 79%;
-    width: 7%;
-    opacity: 0;
-    transform: rotate(-25deg);
-    z-index: 6;
-    animation-name: fadeIn, handUp3, fadeOut;
-    animation-duration: 0s, 2s, 0s;
-    animation-delay: 28.5s, 28.5s, 32s;
-    animation-fill-mode: forwards;
-}
 
 
 /* Library of animations */
@@ -170,14 +171,14 @@ img#point2 {
     }
 }
 
-@keyframes handUp3 {
+@keyframes handDown3 {
     0% {
         left: 76%;
         top: 53%;
     }
     100% {
-        left: 91%;
-        top: 39%;
+        left: 15%;
+        top: 90%;
     }
 }
 
