@@ -170,14 +170,14 @@ img#point2 {
     }
 }
 
-@keyframes handUp3 {
+@keyframes handDown2 {
     0% {
-        left: 76%;
-        top: 53%;
-    }
-    100% {
         left: 91%;
         top: 39%;
+    }
+    100% {
+        left: 76%;
+        top: 53%;
     }
 }
 
@@ -253,14 +253,14 @@ img#point2 {
     }
 }
 
-@keyframes handDown2 {
+@keyframes handUp3 {
     0% {
-        left: 35%;
-        top: 78%;
-    }
-    100% {   
         left: 15%;
         top: 90%;
+    }
+    100% {   
+        left: 35%;
+        top: 78%;
     }
 }
 

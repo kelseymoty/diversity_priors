@@ -44,6 +44,12 @@
     onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
 >
     <source src="assets/audio/giraffe_intro.mp3" />
+
+    <script>
+        var audio = document.getElementById("audio");
+        audio.volume = 0.6;
+    </script>
+
 </audio>
 
 <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -67,6 +73,11 @@ solution for the first audio. All other audio afterward will successfully autopl
 >
         <source src="assets/audio/giraffe_all.mp3" />
 
+        <script>
+            var audio = document.getElementById("audio2");
+            audio.volume = 0.6;
+        </script>
+
     </audio>
 
 
@@ -77,6 +88,11 @@ solution for the first audio. All other audio afterward will successfully autopl
 >
         <source src="assets/audio/giraffe_average.m4a" />
     
+        <script>
+            var audio = document.getElementById("audio3");
+            audio.volume = 0.6;
+        </script>
+
     </audio>
 
 </body>

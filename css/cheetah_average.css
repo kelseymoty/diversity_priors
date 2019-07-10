@@ -144,12 +144,13 @@ img#point2 {
 
 @keyframes handUp2 {
     0% {
-        left: 73%;
-        top: 40%;
-    }
-    100% {
         left: 89%;
         top: 20%;
+    }
+    100% {
+        left: 73%;
+        top: 40%;
+
     }
 }
 
@@ -170,12 +171,12 @@ img#point2 {
 
 @keyframes handDown2 {
     0% {
-        left: 50%;
-        top: 73%;
-    }
-    100% {   
         left: 33%;
         top: 88%;
+    }
+    100% {   
+        left: 50%;
+        top: 73%;
     }
 }
 

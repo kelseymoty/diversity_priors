@@ -212,24 +212,24 @@ img#point3 {
     } 
 }
 
-@keyframes handRight {
+@keyframes handLeft {
     0% {
-        left: 63%;
+        left: 81%;
         top: 79%;
     }
     100% {
-        left: 81%;
+        left: 63%;
         top: 79%;
     }
 }
 
-@keyframes handLeft {
+@keyframes handRight {
     0% {
-        left: 26%;
+        left: 8%;
         top: 79%;
     }
     100% {
-        left: 8%;
+        left: 26%;
         top: 79%;
     }
 }
