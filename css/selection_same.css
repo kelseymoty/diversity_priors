@@ -12,81 +12,46 @@ div#images {
     left: 0; 
 }
 
-img#sarah_point, img#sarah_up, img#sarah4 {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    top: 0%;
-    opacity: 0;
-}
-
-img#sarah4 {
-    animation-name: fadeIn, fadeOut;
-    animation-duration: 0s, 1s;
-    animation-delay: 0.5s, 19s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    z-index: 4;
-}
-
-img#sarah_up {
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 3.5s, 5s, 13s, 14s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    z-index: 5;
-}
-
-img#sarah_point {
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s, 0s;
-    animation-delay: 8s, 9.5s, 16s, 18s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    z-index: 4;
-}
-
 img#sarah_headshot {
     position: absolute;
-    left: 70%;
+    left: 73%;
     width: 25%;
-    top: 4%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 23s, 59s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 0s, 12s, 15s, 20.5s, 27.5s, 35s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5
+}
+
+img#sarah_one {
+    position: absolute;
+    left: 73%;
+    width: 25%;
+    top: 3%;
+    opacity: 0%;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s;
+    animation-delay: 12s, 15s, 20.5s, 27.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 4
 }
 
-img#sarah_one {
-    position: absolute;
-    left: 70%;
-    width: 25%;
-    top: 4%;
-    opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 0s;
-    animation-delay: 0s, 27.5s, 29s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    z-index: 5
-}
-
 img#sarah_left {
     position: absolute;
-    left: 70%;
+    left: 73%;
     width: 25%;
-    top: 4%;
+    top: 3%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 1s, 0s;
-    animation-delay: 0s, 21s, 23s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 0s, 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    z-index: 5
+    z-index: 6
 }
 
 img#lunchbox {
@@ -95,74 +60,74 @@ img#lunchbox {
     width: 23%;
     top: 23%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, wiggle, fadeOut;
-    animation-duration: 0s, 2s, 2s, 0s;
-    animation-delay: 0s, 20s, 22s, 59s;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s, 0s;
+    animation-delay: 0s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
-img#ham {
+img#banana {
     position: absolute;
-    left: 11%;
-    width: 14%;
-    top: 63%;
-    opacity: 0%;
-    animation-name: fadeOut, fadeIn, wiggle, fadeOut50, fadeOut;
-    animation-duration: 0s, 1.5s, 3s, 2s, 0s;
-    animation-delay: 0s, 25s, 30.5s, 33.5s, 59s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-
-img#apple {
-    position: absolute;
-    left: 28%;
-    width: 10%;
+    left: 9%;
+    width: 15%;
     top: 64%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
-    animation-duration: 0s, 1.5s, 1.5s, 0s;
-    animation-delay: 0s, 25s, 55.5s, 59s;
+    animation-name: fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 0s, 0s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
-img#carrots {
+img#cookies {
+    position: absolute;
+    left: 27%;
+    width: 12%;
+    top: 66%;
+    opacity: 0%;
+    animation-name: fadeIn, wiggle, pulseMedium, fadeOut50, fadeOut;
+    animation-duration: 0s, 2s, 2s, 1s, 0s;
+    animation-delay: 0s, 0s, 30s, 31s, 35s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#grapes {
     position: absolute;
     left: 42%;
-    width: 13%;
-    top: 69%;
+    width: 14%;
+    top: 68%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
-    animation-duration: 0s, 1.5s, 1.5s, 0s;
-    animation-delay: 0s, 25s, 56s, 59s;
+    animation-name: fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 0s, 0s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
-img#pbj {
+img#pizza {
     position: absolute;
-    left: 58%;
-    width: 16%;
-    top: 65%;
+    left: 59%;
+    width: 14%;
+    top: 67%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 1.5s;
-    animation-delay: 0s, 25s, 59s;
+    animation-name: fadeIn, wiggle, fadeOut;
+    animation-duration: 0s, 2s, 0s;
+    animation-delay: 0s, 0s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
-img#grapple {
+img#cookie {
     position: absolute;
-    left: 76%;
+    left: 78%;
     width: 9%;
-    top: 65%;
+    top: 68%;
     opacity: 0%;
-    animation-name: fadeOut, fadeIn, pulseMedium, fadeOut;
-    animation-duration: 0s, 1.5s, 1.5s, 0s;
-    animation-delay: 0s, 25s, 55.5s, 59s;
+    animation-name: fadeIn, wiggle, pulseMedium, fadeOut50, fadeOut;
+    animation-duration: 0s, 2s, 1.5s, 2s, 0s;
+    animation-delay: 0s, 0s, 10s, 11.5s, 35s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
